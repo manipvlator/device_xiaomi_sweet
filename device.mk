@@ -14,6 +14,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     LunarisDolby
 
+# MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-sweet/device.mk)
+
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 30
 
