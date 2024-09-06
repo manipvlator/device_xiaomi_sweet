@@ -17,6 +17,10 @@ PRODUCT_PACKAGES += \
 # MiuiCamera
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-sweet/device.mk)
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 30
 
