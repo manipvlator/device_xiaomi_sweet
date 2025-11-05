@@ -18,6 +18,9 @@ $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 TARGET_SCREEN_WIDTH := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# DeviceAsWebcam
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+
 # Shinkai build flags
 SHINKAI_MAINTAINER := ＭＡＮＩＰＵＬＡＴＯＲ
 PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := false
