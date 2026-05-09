@@ -18,6 +18,19 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_SCREEN_WIDTH := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# AxionAOSP Flags
+AXION_CAMERA_REAR_INFO := 108,8,5,2
+AXION_CAMERA_FRONT_INFO := 16
+AXION_MAINTAINER := ＭＡＮＩＰＵＬＡＴＯＲ
+AXION_PROCESSOR := Snapdragon_732G
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTED_REFRESH_RATES := 60,120
+TARGET_DOZE_DOUBLE_TAP_PULSE_SUPPORTED := true
+TARGET_INCLUDE_GOOGLE_TELECOMM := false
+TARGET_DISABLES_LIBPERF ?= true
+HBM_SUPPORTED := true
+HBM_NODE := /sys/class/backlight/panel0-backlight/hbm_mode
+
 PRODUCT_NAME := lineage_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
