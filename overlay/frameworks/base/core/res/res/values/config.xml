@@ -385,4 +385,7 @@
         <item>10</item>
         <item>10</item>
     </integer-array>
+
+    <!-- Boolean indicating whether display white balance is supported -->
+    <bool name="config_displayWhiteBalanceAvailable">false</bool>
 </resources>
