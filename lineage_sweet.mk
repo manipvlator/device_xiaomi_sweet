@@ -18,6 +18,17 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_SCREEN_WIDTH := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# RisingOS Flags
+RISING_MAINTAINER="ＭＡＮＩＰＵＬＡＴＯＲ"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 732G || Morat Engine" \
+    RisingMaintainer="ＭＡＮＩＰＵＬＡＴＯＲ"
+RISING_MAINTAINER := ＭＡＮＩＰＵＬＡＴＯＲ
+TARGET_ENABLE_BLUR := true
+TARGET_USES_PICO_GAPPS := false
+WITH_GMS := false
+WITH_MICROG := false
+
 PRODUCT_NAME := lineage_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
