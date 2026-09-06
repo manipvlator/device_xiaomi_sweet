@@ -110,3 +110,6 @@ PRODUCT_PACKAGES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
+
+# Sign Build
+-include vendor/lineage-priv/keys/keys.mk

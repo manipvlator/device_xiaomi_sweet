@@ -12,13 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sweet device
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Shinkai stuff.
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 TARGET_SCREEN_WIDTH := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-PRODUCT_NAME := lineage_sweet
+# Shinkai build flags
+SHINKAI_MAINTAINER := ＭＡＮＩＰＵＬＡＴＯＲ
+PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := false
+
+PRODUCT_NAME := shinkai_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro
