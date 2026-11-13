@@ -26,7 +26,7 @@ popd > /dev/null || exit 1
 echo -e "\n${CYAN}--- NoMount Integration ---${NC}"
 echo -e "${GREEN}[+] Integrating NoMount...${NC}"
 pushd "$KERNEL_DIR" > /dev/null || exit 1
-curl -LSs "https://raw.githubusercontent.com/maxsteeel/nomount/refs/heads/dev/kernel/setup.sh" | bash -
+curl -LSs "https://raw.githubusercontent.com/maxsteeel/nomount/refs/heads/master/kernel/setup.sh" | bash -s master
 popd > /dev/null || exit 1
 
 echo -e "\n${CYAN}-----------------------------${NC}"
