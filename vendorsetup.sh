@@ -9,6 +9,12 @@ RED='\033[0;31m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
+# PalapaUI sweet Integration
+PALAPAI_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
+echo -e "\n${CYAN}--- PalapaUI sweet Integration ---${NC}"
+echo -e "${GREEN}[+] Applying PalapaUI UI payload...${NC}"
+bash "$PALAPAI_ROOT/vendor/palapaui-sweet/apply.sh" "$PALAPAI_ROOT"
+
 # Check Kernel Directory
 if [ ! -d "$KERNEL_DIR" ]; then
     echo -e "${RED}[!] Kernel directory not found: $KERNEL_DIR${NC}"
